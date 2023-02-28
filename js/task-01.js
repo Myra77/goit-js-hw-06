@@ -10,5 +10,5 @@ console.log(`Number of categories: ${categoryList.length}`);
 
 const categoryDetails = categoryList.forEach((category) => {
   console.log(`Category: ${category.firstElementChild.textContent}`);
-  console.log(`Elements: ${category.querySelectorAll("li").length}`);
+  console.log(`Elements: ${category.lastElementChild.childElementCount}`);
 });

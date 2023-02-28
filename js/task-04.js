@@ -11,10 +11,10 @@ let counter = document.querySelector("#value");
 
 btnDecrement.addEventListener("click", () => {
   counterValue -= 1;
-  counter.innerHTML = counterValue;
+  counter.textContent = counterValue;
 });
 
 btnIncrement.addEventListener("click", () => {
   counterValue += 1;
-  counter.innerHTML = counterValue;
+  counter.textContent = counterValue;
 });

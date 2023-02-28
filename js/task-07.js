@@ -4,6 +4,9 @@
 const fsChange = document.getElementById("font-size-control");
 const textChange = document.getElementById("text");
 
+// textChange.style.fontSize = "16px";
+textChange.style.fontSize = fsChange.value + "px";
+
 fsChange.addEventListener("input", (event) => {
   textChange.style.fontSize = event.currentTarget.value + "px";
 });
